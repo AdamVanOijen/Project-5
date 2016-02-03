@@ -22,5 +22,8 @@
     
 ip:   52.33.138.139
 port: 2200
+user: grader
+
+to gain access to the server run ssh -i ~/.ssh/grader_key.rsa grader@52.33.138.139 -p 2200
 
 url to web application:  http://52.33.138.139/
