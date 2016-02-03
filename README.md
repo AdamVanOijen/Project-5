@@ -1,35 +1,6 @@
 http://52.33.138.139/
 port:2200
 
-
------BEGIN RSA PRIVATE KEY-----
-MIIEowIBAAKCAQEAmmJUP6zc8jh29b150Weey5aNuH30nV5AQ73MWqYeeJTNERA4
-fWKdN3P2g3wKB3tjYfIcbqAAeLMO6MV8lOIM5rx9UIKyhf0qEWJME2beQ784deXa
-a3p1v8m7+cciq4mF/JaaKtoRwalLr98H3LW0WTqltuswu0GHfbWyqDAuEGh8pwp1
-4cK0TOMzd8kgb36wma5cQrmr54swxFoMzMhtF6hEjxyANyKJZ2zV88M1l0cNj91Z
-3vSUEACUNnJGYUSPHuau7ZXZfVVWY4gNrunSbrSkbP44gEf0S94WkVKhYKMEV1Fc
-GvYSpknW7ZhIaPBST6XehbHL6flLLx/2qGJR/QIDAQABAoIBAANonmGViH9UndPJ
-LjJgblIibdif91GuLg8Q1r09o7iX2HtC92xVTBFYXx4CFBqcL9KOzO/oWnpPwcmD
-6r9CynQhv0aSzCxHLbGakQFwqQGn7DA2Nf9fgdANPThDnFFbRPkRvi+qBvBWs5Qb
-gYnu/R9nOxdx0+6egMZWx64M+kdkbmyvskwqvfIhZh9BU7BNN3pDk7ttTf2TRzLh
-n7pnD8irNJqWBQYJ7cKvaqIDqHEp72KRKOr6VDPfYAyg7gVixqYn0/tIR0CA54CW
-R3o2Jcg1892OUiUZhLCscn37+0drPPnTLMr42Io/BboHmAUKbuF93LlJQCYUG/w0
-mSb/e0ECgYEAyE7cSuglGCjoufQGGp+qcXXBjKgFhYAAOuO7HOLOkFycugLscUK6
-owwmARzryenmECeqnWxX1Dx99zj92kvX3URV56OyoFsXI3OLw1NNaQEL+K1p1IQF
-tfW9GM6n/n9Z6A+5CtRrgHlq+ZsnxCZKSM9W1JrXwkAIxvh6sI1uWBECgYEAxU7I
-RB8dgGMTuq5/GKF+Tb1Nle2r8ByouP1QGda6q2sUhAndrw4RPuI7zmTa4NQOoEJr
-Fkwtb6WWFogpeJbJkgVLlFEYYYJ1ZXLxfLFONx7M7PDoICbHUqXk/J9gSMIOexiv
-Ymkaqxq5t3PR/VY00tjQJo1ESdOlffc0sNuuZy0CgYArmk8F10bL3Yvbfq0deogl
-rpZ1QdYB230xVIVUomKItkA/lYdWmEn8WBalw1/oUgwMlDXlksIDpy9cc4F+1Wel
-+MwiYlXt5iZBR1OzLxz4sIuklEsnQZ3koBuLnOCg26P8if+jxd2o18VblFSxtAwT
-kV67ZQF2fW3rsgczC3ZroQKBgQCt1jyR8EwgyqoeRxGJlPdf7NKHrvBWzBlHaz+A
-lHTBBMX9k2eyjRVarx58ONWzUoJUZlBNQ+6gOGblETBgo5GSyoGNemmdt8BREpV7
-BAhifguVEqehdCkXQzxd6tl9ISR7BgO4E9xANnq8DBpONv6xaf7yiHJLDWL4ea39
-yH9/PQKBgF2xP2Qw901ItPSMhRhokxlFvjWh9NAxRA/g0WO7D8NJaYZsQncdZXzZ
-SOr1smRIbMPeMJ4zjfjSjsTJBh0rhXADHRRSvDR8ARtEkIhkMuzLHE7j/7ylpX8X
-ntyF4XItRwH9pEi4pcBVr1OEep6rKyFd6TgXjtt2QRc122IiUebi
------END RSA PRIVATE KEY-----
-
 summary of software installed and config changes made:
   software installed:
     postgresql
@@ -37,4 +8,18 @@ summary of software installed and config changes made:
     flask 
     oauth2
     
-
+  config changes made:
+    configured ssh daemon to port 2200
+    disabled root ssh login
+    enabled firewall
+    set firewall open ports to 80, 123, 2200
+    configured web server:
+      enabled mod_wsgi
+      configured wsgi user
+    configured postgresql:
+      added postgreSQL user catalog
+      added databse catalog
+      granted all permissions for catalog to catalog
+      disabled ssh password authentication; enforced RSA encryption
+    
+    
