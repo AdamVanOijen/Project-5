@@ -1,6 +1,3 @@
-http://52.33.138.139/
-port:2200
-
 #summary of software installed and config changes made:
 ##software installed
 * postgresql
@@ -23,4 +20,7 @@ port:2200
 * granted all permissions for catalog to catalog
 * disabled ssh password authentication; enforced RSA encryption
     
-    
+ip:   52.33.138.139
+port: 2200
+
+url to web application:  http://52.33.138.139/
