@@ -29,4 +29,4 @@ to gain access to the server run ssh -i ~/.ssh/grader_key.rsa grader@52.33.138.1
 url to web application:  http://52.33.138.139/
 
 ###NOTE TO THE REVIEWER
-Im sorry but when I submitted this project I forgot to put the rsa code in the 'notes to the review' section. I sent an email to the support team telling them to send you the rsa key, but if you have not recieved the rsa key from the support team, please contact them for it.
+Im sorry but when I submitted this project I forgot to put the rsa code in the 'notes to the review' section. I sent an email to the support team telling them to send you the rsa key, but if you have not recieved the rsa key from the support team, please contact them for it. 
